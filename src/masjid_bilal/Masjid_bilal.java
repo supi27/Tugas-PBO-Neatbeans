@@ -75,86 +75,84 @@ public class Masjid_bilal {
 //        System.out.print(namaPelanggan.get(2)+" ");
 //        System.out.println(noPelanggan.get(0));
 //        System.out.println();
-//        
-//        //Tabel Keuangan
-//        System.out.println("=".repeat(128)+"");
-//        System.out.println(" ".repeat(57)+"Tabel Keuangan");
-//        System.out.println("=".repeat(128)+"");
-//        
-//        //Constructor Kosong
-//        keuangan cetak = new keuangan();
-//        cetak.setKode(001);
-//        cetak.setTgl("2026-05-10");
-//        cetak.setDesk("Infaq Jum'at");
-//        cetak.setPenerima("Bendahara Masjid");
-//        cetak.setjml(350000);
-//        cetak.setPos("Pemasukkan");
-//        cetak.setKet("Infaq Shalat Jumat");
-//        System.out.println("MENGGUNAKAN CONSTRUCTOR KOSONG:");
-//        System.out.println("("+cetak.getId()+", "+cetak.getTgl()+", "+cetak.getDesk()+
-//                ", "+ cetak.getPenerima()+", "+cetak.getJml()+", "+cetak.getPosisi()+
-//                ", "+ cetak.getKet()+") ");
-//        
-//        //CONSTRUCTOR BERPARAMETER
-//        keuangan cetak2 = new keuangan(
-//                002,
-//                "2026-05-09",
-//                "Bayar Listrik",
-//                "PLN",
-//                750000,
-//                "Pengeluaran",
-//                "Tagihan Listrik Masjid"           
-//        );
-//        System.out.println("MENGGUNAKAN CONSTRUCTOR BERPARAMETER:");
-//        System.out.println("ID         : "+cetak2.getId());
-//        System.out.println("Tanggal    : "+cetak2.getTgl());
-//        System.out.println("Deskripsi  : "+cetak2.getDesk());
-//        System.out.println("Penerima   : "+cetak2.getPenerima());
-//        System.out.println("Jumlah     : "+cetak2.getJml());
-//        System.out.println("Posisi     : "+cetak2.getPosisi());
-//        System.out.println("Keterangan : "+cetak2.getKet());
-//        System.out.println();
-//        
-//        //ARRAY STATIC
-//        Integer harga[] = new Integer[4];
-//        harga[0] = 100000;
-//        harga[1] = 200000;
-//        harga[2] = 300000;
-//        harga[3] = 400000;
-//        System.out.println("MENGGUNAKAN STATIC ARRAY");
-//        System.out.println(harga[3]);
-//        
-//        //ARRAY DINAMIS
-//        ArrayList<Integer> id = new ArrayList<>();
-//        ArrayList<String> tanggal = new ArrayList<>();
-//        System.out.println("MENGGUNAKAN ARRAY DINAMIS");
-//        id.add(10);
-//        id.add(14);
-//        id.add(18);
-//        id.add(27);
-//        tanggal.add("2026-06-26");
-//        tanggal.add("2027-07-07");
-//        tanggal.add("2018-08-08");
-//        id.remove(0);
-//        System.out.println(id);
-//        System.out.println(tanggal);
-//        System.out.println("ID("+id.get(2)+"), Tanggal("+tanggal.get(1)+")");
-//        System.out.println();
-//        //Tabel Keuangan
-//        System.out.println("+"+"-".repeat(46)+"+");
-//        System.out.println("|"+" ".repeat(14)+"RIWAYAT PEMBAYARAN"+" ".repeat(14)+"|");
-//        System.out.println("+"+"-".repeat(46)+"+");
-//        System.out.println("| ID         : "+cetak2.getId()+" ".repeat(31)+"|");
-//        System.out.println("| Tanggal    : "+cetak2.getTgl()+" ".repeat(22)+"|");
-//        System.out.println("| Deskripsi  : "+cetak2.getDesk()+" ".repeat(19)+"|");
-//        System.out.println("| Penerima   : "+cetak2.getPenerima()+" ".repeat(29)+"|");
-//        System.out.println("| Jumlah     : "+cetak2.getJml()+" ".repeat(26)+"|");
-//        System.out.println("| Posisi     : "+cetak2.getPosisi()+" ".repeat(21)+"|");
-//        System.out.println("| Keterangan : "+cetak2.getKet()+" ".repeat(10)+"|");
-//        System.out.println("+"+"-".repeat(46)+"+");
-//        System.out.println("| "+" ".repeat(1)+"PT PLN (Persero) Unit Pelaksana Pelayanan"+" ".repeat(3)+"|");
-//        System.out.println("| "+" ".repeat(13)+"(UP3) Banjarmasin"+" ".repeat(15)+"|");
-//        System.out.println("+"+"-".repeat(46)+"+");
+        
+        //Tabel Keuangan
+        System.out.println("=".repeat(128)+"");
+        System.out.println(" ".repeat(57)+"Tabel Keuangan");
+        System.out.println("=".repeat(128)+"");
+        
+        keuangan cetak = new keuangan();
+        cetak.setKode("001");
+        cetak.setTgl("2026-05-10");
+        cetak.setDesk("Infaq Jum'at");
+        cetak.setPenerima("Bendahara Masjid");
+        cetak.setjml(350000);
+        cetak.setPos("Pemasukkan");
+        cetak.setKet("Infaq Shalat Jumat");
+        System.out.println("MENGGUNAKAN CONSTRUCTOR KOSONG:");
+        System.out.println("("+cetak.getId()+", "+cetak.getTgl()+", "+cetak.getDesk()+
+                ", "+ cetak.getPenerima()+", "+cetak.getJml()+", "+cetak.getPosisi()+
+                ", "+ cetak.getKet()+") ");
+        
+        keuangan cetak2 = new keuangan(
+                "002",
+                "2026-05-09",
+                "Bayar Listrik",
+                "PLN",
+                750000,
+                "Pengeluaran",
+                "Tagihan Listrik Masjid"           
+        );
+        System.out.println("MENGGUNAKAN CONSTRUCTOR BERPARAMETER:");
+        System.out.println("ID         : "+cetak2.getId());
+        System.out.println("Tanggal    : "+cetak2.getTgl());
+        System.out.println("Deskripsi  : "+cetak2.getDesk());
+        System.out.println("Penerima   : "+cetak2.getPenerima());
+        System.out.println("Jumlah     : "+cetak2.getJml());
+        System.out.println("Posisi     : "+cetak2.getPosisi());
+        System.out.println("Keterangan : "+cetak2.getKet());
+        System.out.println();
+        
+        //ARRAY STATIC
+        Integer harga[] = new Integer[4];
+        harga[0] = 100000;
+        harga[1] = 200000;
+        harga[2] = 300000;
+        harga[3] = 400000;
+        System.out.println("MENGGUNAKAN STATIC ARRAY");
+        System.out.println(harga[3]);
+        
+        //ARRAY DINAMIS
+        ArrayList<Integer> id = new ArrayList<>();
+        ArrayList<String> tanggal = new ArrayList<>();
+        System.out.println("MENGGUNAKAN ARRAY DINAMIS");
+        id.add(10);
+        id.add(14);
+        id.add(18);
+        id.add(27);
+        tanggal.add("2026-06-26");
+        tanggal.add("2027-07-07");
+        tanggal.add("2018-08-08");
+        id.remove(0);
+        System.out.println(id);
+        System.out.println(tanggal);
+        System.out.println("ID("+id.get(2)+"), Tanggal("+tanggal.get(1)+")");
+        System.out.println();
+        //Tabel Keuangan
+        System.out.println("+"+"-".repeat(46)+"+");
+        System.out.println("|"+" ".repeat(14)+"RIWAYAT PEMBAYARAN"+" ".repeat(14)+"|");
+        System.out.println("+"+"-".repeat(46)+"+");
+        System.out.println("| ID         : "+cetak2.getId()+" ".repeat(29)+"|");
+        System.out.println("| Tanggal    : "+cetak2.getTgl()+" ".repeat(22)+"|");
+        System.out.println("| Deskripsi  : "+cetak2.getDesk()+" ".repeat(19)+"|");
+        System.out.println("| Penerima   : "+cetak2.getPenerima()+" ".repeat(29)+"|");
+        System.out.println("| Jumlah     : "+cetak2.getJml()+" ".repeat(26)+"|");
+        System.out.println("| Posisi     : "+cetak2.getPosisi()+" ".repeat(21)+"|");
+        System.out.println("| Keterangan : "+cetak2.getKet()+" ".repeat(10)+"|");
+        System.out.println("+"+"-".repeat(46)+"+");
+        System.out.println("| "+" ".repeat(1)+"PT PLN (Persero) Unit Pelaksana Pelayanan"+" ".repeat(3)+"|");
+        System.out.println("| "+" ".repeat(13)+"(UP3) Banjarmasin"+" ".repeat(15)+"|");
+        System.out.println("+"+"-".repeat(46)+"+");
 
           new frameUtama().setVisible(true);
     }

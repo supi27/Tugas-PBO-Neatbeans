@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package ui;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import masjid_bilal.keuangan;
 /**
@@ -218,6 +219,10 @@ public class frameKeuangan extends javax.swing.JFrame {
 
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         // TODO add your handling code here:
+                int data = obj.getIndexArray(txtId.getText());
+        if (data > -1){
+            JOptionPane.showMessageDialog(null, "Data Sudah Tersimpan!!!");
+        } else {
         obj.inputIdKeuangan(txtId.getText());
         obj.inputTanggal(txtTgl.getText());
         obj.inputDeskripsi(txtDesk.getText());
@@ -226,6 +231,7 @@ public class frameKeuangan extends javax.swing.JFrame {
         obj.inputPosisi(cmbPos.getSelectedItem().toString());
         obj.inputJumlah(Integer.valueOf(txtJumlah.getText()));
         tampilDataKeuangan();
+        }
     }//GEN-LAST:event_btnTambahActionPerformed
 
     private void btnCekActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCekActionPerformed

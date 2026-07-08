@@ -216,14 +216,20 @@ public class frameAdmin extends javax.swing.JFrame {
 
     private void btTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btTambahActionPerformed
         // TODO add your handling code here:
-        obj.inputDataKodeAdmin(txtKodeAdmin.getText());
-        obj.inputDataUsername(txtUsername.getText());
-        obj.inputDataPassword(txtPassword.getText());
-        obj.inputDataTelepon(txtTelepon.getText());
-        obj.inputDataEmail(txtEmail.getText());
-        obj.inputDataGambar(txtGambar.getText());
-        obj.inputDataStatus(cmbStatus.getSelectedItem().toString());
-        tampilDataAdmin();
+        int data = obj.getIndexArray(txtKodeAdmin.getText());
+        if (data > -1){
+            JOptionPane.showMessageDialog(null, "Data Sudah Tersimpan!!!");
+        } else {
+            obj.inputDataKodeAdmin(txtKodeAdmin.getText());
+            obj.inputDataUsername(txtUsername.getText());
+            obj.inputDataPassword(txtPassword.getText());
+            obj.inputDataTelepon(txtTelepon.getText());
+            obj.inputDataEmail(txtEmail.getText());
+            obj.inputDataGambar(txtGambar.getText());
+            obj.inputDataStatus(cmbStatus.getSelectedItem().toString());
+            tampilDataAdmin();
+        }
+        
     }//GEN-LAST:event_btTambahActionPerformed
 
     private void btCekDataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btCekDataActionPerformed
