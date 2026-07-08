@@ -49,6 +49,10 @@ public class keuangan {
         this.dataJumlah = new ArrayList<>();
     }
     
+    public void inputIdKeuangan(String isi){
+        this.dataIdKeuangan.add(isi);
+    }
+    
     public void inputTanggal(String isi){
         this.dataTanggal.add(isi);
     }
@@ -69,12 +73,12 @@ public class keuangan {
         this.dataKeterangan.add(isi);
     }
     
-    public void inputIdKeuangan(String isi){
-        this.dataIdKeuangan.add(isi);
-    }
-    
     public void inputJumlah(Integer isi){
         this.dataJumlah.add(isi);
+    }
+    
+    public ArrayList<String> listDataIdKeuangan(){
+        return this.dataIdKeuangan;
     }
     
     public ArrayList<String> listDataTanggal(){
@@ -95,10 +99,6 @@ public class keuangan {
     
     public ArrayList<String> listDataketerangan(){
         return this.dataKeterangan;
-    }
-    
-    public ArrayList<String> listDataIdKeuangan(){
-        return this.dataIdKeuangan;
     }
     
     public ArrayList<Integer> listDataJumlah(){
@@ -162,7 +162,7 @@ public class keuangan {
     }
     
     public void cekData(){
-        String pesan ="ID: "+listDataIdKeuangan()+"\n"+"Usename: "+listDataTanggal()+"\n"+
+        String pesan ="ID: "+listDataIdKeuangan()+"\n"+"Tanggal: "+listDataTanggal()+"\n"+
                 "Deskripsi: "+listDataDeskripsi()+"\n"+"Penerima: "+listDataPenerima()+"\n"+
                 "IKeterangan: "+listDataketerangan()+"\n"+"Posisi: "+listDataPosisi()+"\n"+
                 "Jumlah: "+listDataJumlah()+"\n";

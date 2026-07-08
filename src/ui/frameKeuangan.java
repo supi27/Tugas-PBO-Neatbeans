@@ -219,7 +219,7 @@ public class frameKeuangan extends javax.swing.JFrame {
 
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTambahActionPerformed
         // TODO add your handling code here:
-                int data = obj.getIndexArray(txtId.getText());
+        int data = obj.getIndexArray(txtId.getText());
         if (data > -1){
             JOptionPane.showMessageDialog(null, "Data Sudah Tersimpan!!!");
         } else {
